@@ -1,0 +1,15 @@
+version: '5'
+
+services:
+  mongo:
+    image: 'mongo:latest'
+    container_name: "mongo"
+    ports:
+      - "27017:27017"
+  docker-compose-vija:
+    image: docker-compose-vija:latest
+    container_name: "docker-compose-vija"
+    ports:
+      - "8098:8080"
+    links:
+      - mongo

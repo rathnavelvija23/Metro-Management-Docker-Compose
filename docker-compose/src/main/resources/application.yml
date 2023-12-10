@@ -1,0 +1,13 @@
+---
+#spring:
+#  data:
+#    mongodb:
+#      uri: Use Mongo atlas connection URL
+#      database: Rail
+
+spring:
+  data:
+    mongodb:
+      host: mongo
+      port: 27017
+      database: Rail
